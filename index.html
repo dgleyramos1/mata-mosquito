@@ -5,12 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js"></script>
         <title>App mata-mosquito</title>
     </head>
     <body onresize="ajustaTamanhoPalcoJogo()">
         
+        <div class="painel">
+            <div class="vidas">
+                <img id="v1" src="imagens/coracao_cheio.png" alt="">
+                <img id="v2" src="imagens/coracao_cheio.png" alt="">
+                <img id="v3" src="imagens/coracao_cheio.png" alt="">
+            </div>
+            <div class="cronometro">tempo restante: ?</div>
+        </div>
 
-
-        <script src="script.js"></script>
+        <script>
+            setInterval(function(){
+                posicaoRandomica()
+            }, 2000)
+        </script>
     </body>
 </html>
