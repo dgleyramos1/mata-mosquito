@@ -16,7 +16,7 @@ var cronometro = setInterval(function(){
 
     if(tempo < 0){
         clearInterval(cronometro)
-        clearInterval(criarmosquito)
+        clearInterval(criaMosquito)
     }else {
         document.getElementById("cronometro").innerHTML = tempo
     }
